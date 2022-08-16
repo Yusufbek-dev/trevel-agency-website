@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/cb3b11f165.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- uikit style and js -->
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+    <link rel="stylesheet" href="/css/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="header container">
+        <div class="header__logo">
+          <a href="#"><img src="/images/icons/logo.png" alt="logo" /></a>
+        </div>
+        <div class="header__right">
+          <input type="checkbox" id="check-bar" />
+          <ul class="header__nav">
+            <li class="header__nav_item header__nav_item--active">
+              <a href="#">Home</a>
+            </li>
+            <li class="header__nav_item">
+              <a href="#">Destinations</a>
+            </li>
+            <li class="header__nav_item">
+              <a href="#">About</a>
+            </li>
+            <li class="header__nav_item">
+              <a href="#">Partner</a>
+            </li>
+          </ul>
+          <div class="header__buttons">
+            <button class="header__buttons_login">Login</button>
+            <button class="header__buttons_register">Register</button>
+          </div>
+          <label for="check-bar" class="bar">
+            <i class="fa-solid fa-bars-staggered"></i>
+          </label>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="hero__left">
+            <h1>Explore and Travel</h1>
+            <h3 class="hero__subtitle">Holiday finder</h3>
+            <ul uk-accordion="multiple: true" class="hero-explore">
+              <li class="hero-explore-item">
+                <a class="uk-accordion-title" href="#">Location</a>
+                <div class="uk-accordion-content">
+                  <p>
+                    <a href="#">London center</a> <br />
+                    <a href="#">London st downside</a> <br />
+                    <a href="#">London st 11</a>
+                  </p>
+                </div>
+              </li>
+              <li class="hero-explore-item">
+                <a class="uk-accordion-title" href="#">Activity</a>
+                <div class="uk-accordion-content">
+                  <p>London center</p>
+                </div>
+              </li>
+              <li class="hero-explore-item">
+                <a class="uk-accordion-title" href="#">Grade</a>
+                <div class="uk-accordion-content">
+                  <p>London center</p>
+                </div>
+              </li>
+              <li class="hero-explore-item">
+                <a class="uk-accordion-title" href="#">Date</a>
+                <div class="uk-accordion-content">
+                  <p>London center</p>
+                </div>
+              </li>
+            </ul>
+            <button class="hero-btn">Explore</button>
+          </div>
+          <div class="hero__right">
+            <div class="hero__right_img">
+              <img src="./images/hero-img.png" alt="" />
+            </div>
+            <div class="add">
+              <img src="/images/add.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="info">
+        <div class="container">
+          <div class="info__img">
+            <img src="./images/info-img1.png" alt="" />
+          </div>
+          <div class="info__texts">
+            <div class="circle">
+              <img src="/images/circle.png" alt="" />
+            </div>
+            <h2 class="info__texts_title">A new way to explore the world</h2>
+            <p class="info__texts_subtitle">
+              For decades travellers have reached for Lonely Planet books when
+              looking to plan and execute their perfect trip, but now, they can
+              also let Lonely Planet Experiences lead the way
+            </p>
+            <button class="info__texts_btn">Learn more</button>
+            <div class="add">
+              <img src="/images/add.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="feature">
+        <div class="container">
+          <div class="feature__top">
+            <div class="circle">
+              <img src="/images/circle.png" alt="" />
+            </div>
+            <h2 class="feature__top_title">Featured destinations</h2>
+            <button class="feature__top_btn">
+              View all <span uk-icon="chevron-right"></span>
+            </button>
+          </div>
+          <div class="feature__list">
+            <div class="feature__list_item">
+              <img src="/images/feature1.jpg" alt="" />
+              <div class="feature__list_texts">
+                <p>Raja Ampat</p>
+                <span>Indonesia</span>
+              </div>
+            </div>
+            <div class="feature__list_item">
+              <img src="/images/feature2.jpg" alt="" />
+              <div class="feature__list_texts">
+                <p>Fanjingshan</p>
+                <span>China</span>
+              </div>
+            </div>
+            <div class="feature__list_item">
+              <img src="/images/feature3.jpg" alt="" />
+              <div class="feature__list_texts">
+                <p>Vevey</p>
+                <span>Switzerland</span>
+              </div>
+            </div>
+            <div class="feature__list_item">
+              <img src="/images/feature4.jpg" alt="" />
+              <div class="feature__list_texts">
+                <p>Skadar</p>
+                <span>Montenegro</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="info info-2">
+        <div class="container">
+          <div class="info__texts">
+            <div class="circle">
+              <img src="/images/circle.png" alt="" />
+            </div>
+            <h2 class="info__texts_title">Guides by Thousand Sunny</h2>
+            <p class="info__texts_subtitle">
+              Packed with tips and advice from our on-the-ground experts, our
+              city guides app (iOS and Android) is the ultimate resource before
+              and during a trip.
+            </p>
+            <button class="info__texts_btn">Download</button>
+            <div class="add">
+              <img src="/images/add.png" alt="" />
+            </div>
+          </div>
+          <div class="info__img">
+            <img src="./images/info-img2.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <section class="testimonials">
+        <div class="container">
+          <h2 class="testimonials__title">Testimonials</h2>
+          <div class="testimonials__list">
+            <div class="testimonials__texts">
+              <div class="circle">
+                <img src="/images/circle.png" alt="" />
+              </div>
+              <div class="testimonials__texts_stars">
+                <span uk-icon="star"></span>
+                <span uk-icon="star"></span>
+                <span uk-icon="star"></span>
+                <span uk-icon="star"></span>
+                <span uk-icon="star"></span>
+              </div>
+              <p class="testimonials__texts_dsc">
+                “Quisque in lacus a urna fermentum euismod. Integer mi nibh,
+                dapibus ac scelerisque eu, facilisis quis purus. Morbi blandit
+                sit amet turpis nec”
+              </p>
+              <p class="testimonials__texts_headline">Edward Newgate</p>
+              <p class="testimonials__texts_subtitle">Founder Circle</p>
+            </div>
+            <div class="testimonials__author">
+              <div class="testimonials__author_img">
+                <div class="circle">
+                  <img src="/images/big-circle.png" alt="" />
+                </div>
+                <img src="/images/testimonial-img.jpg" alt="" />
+                <div class="add">
+                  <img src="/images/big-add.png" alt="" />
+                </div>
+                <div class="testimonials__author_buttons">
+                  <button><span uk-icon="chevron-left"></span></button>
+                  <button><span uk-icon="chevron-right"></span></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="stories">
+        <div class="container">
+          <div class="stories__top">
+            <div class="add">
+              <img src="/images/add.png" alt="" />
+            </div>
+            <h2 class="stories__title">Trending stories</h2>
+            <button class="stories__view-btn">
+              View all <span uk-icon="chevron-right"></span>
+            </button>
+          </div>
+          <div class="stories__list">
+            <div class="stories__item">
+              <img src="/images/story1.jpg" alt="" />
+              <p class="stories__item_headline">
+                The many benefits of taking a healing holiday
+              </p>
+              <p class="stories__item_dsc">
+                ‘Helaing holidays’ are on the rise tohelp maximise your health
+                and happines...
+              </p>
+              <button class="stories__item_btn">Read more</button>
+            </div>
+            <div class="stories__item">
+              <img src="/images/story2.jpg" alt="" />
+              <p class="stories__item_headline">
+                The best Kyoto restaurant to try Japanese food
+              </p>
+              <p class="stories__item_dsc">
+                From tofu to teahouses, here’s our guide to Kyoto’s best
+                restaurants to visit....
+              </p>
+              <button class="stories__item_btn">Read more</button>
+            </div>
+            <div class="stories__item">
+              <img src="/images/story3.jpg" alt="" />
+              <p class="stories__item_headline">
+                Skip Chichen Itza and head to this remote Yucatan
+              </p>
+              <p class="stories__item_dsc">
+                It’s remote and challenging to get, but braving the jungle and
+                exploring these ruins without the....
+              </p>
+              <button class="stories__item_btn">Read more</button>
+            </div>
+            <div class="stories__item">
+              <img src="/images/story4.jpg" alt="" />
+              <p class="stories__item_headline">
+                Surf’s up at these beginner spots around the world
+              </p>
+              <p class="stories__item_dsc">
+                If learning to surf has in on your to- do list for a while, the
+                good news is: it’s never too late...
+              </p>
+              <button class="stories__item_btn">Read more</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer container">
+        <ul class="footer__main">
+          <li class="footer__main_logo">
+            <a href="#"><img src="./images/icons/logo.png" alt="" /></a>
+          </li>
+          <li class="footer__main_dsc">
+            <p>
+              Plan and book your perfect trip with expert advice, travel tips
+              destination information from us
+            </p>
+          </li>
+          <li class="footer__main_company">
+            <p >
+              ©2020 Thousand Sunny. All rights reserved
+            </p>
+          </li>
+        </ul>
+        <ul class="footer__list">
+          <li class="footer__list_header">
+            <p>Destinations</p>
+          </li>
+          <li class="footer__list_item">
+            <a href="#">Africa</a>
+          </li>
+          <li class="footer__list_item">
+            <a href="#">Antarctica</a>
+          </li>
+          <li class="footer__list_item">
+            <a href="#"> Asia</a>
+          </li>
+          <li class="footer__list_item">
+            <a href="#">Europe</a>
+          </li>
+          <li class="footer__list_item">
+            <a href="#">America</a>
+          </li>
+        </ul>
+        <ul class="footer__list">
+          <li class="footer__list_header">
+            <p>Shop</p>
+          </li>
+          <li class="footer__list_item">
+            <a href="#">Destination Guides </a>
+          </li>
+          <li class="footer__list_item">
+            <a href="#">Pictorial & Gifts </a>
+          </li>
+          <li class="footer__list_item">
+            <a href="#"> Special Offers </a>
+          </li>
+          <li class="footer__list_item">
+            <a href="#">Delivery Times </a>
+          </li>
+          <li class="footer__list_item">
+            <a href="#">FAQs</a>
+          </li>
+        </ul>
+        <ul class="footer__list">
+          <li class="footer__list_header">
+            <p>Destinations</p>
+          </li>
+          <li class="footer__list_item">
+            <a href="#">Adventure Travel </a>
+          </li>
+          <li class="footer__list_item">
+            <a href="#"> Art And Culture </a>
+          </li>
+          <li class="footer__list_item">
+            <a href="#"> Wildlife And Nature </a>
+          </li>
+          <li class="footer__list_item">
+            <a href="#">Family Holidays </a>
+          </li>
+          <li class="footer__list_item">
+            <a href="#">Food And Drink</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-socials container">
+        <a href="#">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="#">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="#">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="#">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="#">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>

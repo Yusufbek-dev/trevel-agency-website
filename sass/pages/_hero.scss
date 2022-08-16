@@ -1,0 +1,98 @@
+@use "../globals/mixin" as *;
+@use "../globals/colors" as *;
+.hero {
+  padding-top: 80px;
+  & > div {
+    @include adjust;
+  }
+  &__left {
+    h1 {
+      font-size: 4rem;
+      color: #202336;
+      margin-bottom: 74px;
+      @media (max-width:500px) {
+        font-size: 3rem;
+      }
+    }
+    }
+    &__right {
+      @media (max-width:500px) {
+        display: none;
+      }
+  }
+  &__subtitle {
+    font-size: 1.4rem;
+    color: #202336;
+    &::after {
+      content: "";
+      background-color: #202336;
+      border-radius: 4px;
+      height: 2px;
+      width: 32px;
+      display: block;
+      margin-top: 21px;
+    }
+  }
+  @media (max-width:1024px) {
+    &>div {
+      flex-direction: column;
+      row-gap: 50px;
+    }
+    &__right {
+      &_img {
+        max-width: 559px;
+        max-height: 434px;
+      }
+    }
+    h1 {
+      text-align: center;
+    }
+    &__subtitle {
+      text-align: center;
+      &::after {
+        margin-left:-50%;
+      }
+    }
+  }
+}
+.hero-explore {
+  width: 90%;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  @media (max-width:500px) {
+    width: 100%;
+  }
+}
+.hero-explore-item {
+  border: 0.8px solid #AFB0B9;
+  border-radius: 6px;
+  width: 35%;
+  padding: 7px 10px;
+  @media (max-width:1024px) {
+    margin: 0 auto;
+    width: 100%;
+  }
+  @media (max-width:500px) {
+    margin: 0 auto;
+    width: 90%;
+  }
+  &:first-child {
+    margin-top: 20px;
+  }
+  a {
+    font-size: .9rem;
+  }
+}
+.hero-btn {
+  margin-top: 51px;
+  @include btn;
+  padding:11px 60px;
+  @media (max-width:1024px) {
+    margin-left: 50%;
+    transform: translate(-50%);
+  }
+  @media (max-width:500px) {
+    padding:9px 35px;
+  }
+}

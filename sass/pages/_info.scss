@@ -1,0 +1,84 @@
+@use "../globals/mixin" as *;
+@use "../globals/colors" as *;
+
+.info {
+  padding-top:280px;
+  &>div {
+    @include adjust;
+  }
+  &__img {
+    width: 45%;
+    position: relative;
+    .add {
+      position:absolute;
+      bottom: 30px;
+      left: 20px;
+    }
+  }
+  &__texts {
+    width: 45%;
+    position: relative;
+    .circle {
+      position:absolute;
+      top: -20px;
+      left: -20px;
+    }
+    .add {
+      position:absolute;
+      bottom: -20px;
+      right: -20px;
+    }
+    &_title {
+      margin-bottom: 20px;
+      font-size: 2rem;
+    }
+    &_subtitle {
+      font-size: 1rem;
+    }
+    &_btn {
+      margin-top: 39px;
+      @include btn;
+    }
+  }
+  @media (max-width:1024px) {
+    &>div {
+      flex-direction: column-reverse;
+      row-gap: 40px;
+    }
+    &__img {
+      width: 80%;
+    }
+    &__texts {
+      width: 80%;
+    }
+  }
+  @media (max-width:500px) {
+   padding-top: 20px;
+    &__img {
+      display: none;
+    }
+    &__texts {
+      width: 90%;
+      &_title {
+        text-align: center;
+        font-size: 1.8rem;
+      }
+      &_subtitle {
+        text-align: center;
+        font-size: .9rem;
+      }
+      &_btn {
+        margin-left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+}
+
+.info-2 {
+  @media (max-width:1024px) {
+    &>div {
+      flex-direction: column;
+    }
+  }
+}

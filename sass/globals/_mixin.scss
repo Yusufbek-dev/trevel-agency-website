@@ -1,0 +1,27 @@
+@use "./colors" as *;
+@mixin btn {
+  background-color: $primary-color;
+  border-radius: 8px;
+  border: 1px solid $primary-color;
+  font-family: "Inter";
+  font-weight: 500px;
+  font-size: .9rem;
+  color:#fff;
+  padding: 8px 36px;
+  transition: .2s;
+  &:hover {
+    background-color: transparent;
+    color:$primary-color;
+  }
+  @media (max-width:500px) {
+    padding: 6px 20px;
+    font-size: .7rem;
+  }
+}
+
+@mixin adjust {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  
+}

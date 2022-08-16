@@ -1,0 +1,117 @@
+@use "../globals/colors" as *;
+@use "../globals/mixin" as *;
+header {
+  padding-top: 15px;
+  padding-right: 5%;
+  padding-left: 5%;
+}
+.header {
+  @include adjust;
+  width: 100%;
+  height: 9vh;
+  #check-bar {
+    display: none;
+  }
+  .bar {
+    font-size: 1.7rem;
+    color: #000;
+    display: none;
+    transition: .2s;
+    &:hover {
+      cursor: pointer;
+      transform: rotate(90deg);
+    }
+  }
+  &__logo {
+    img {
+      display: block;
+      max-width:41px;
+      height: 41px;
+    }
+  }
+  &__right {
+    @include adjust;
+  }
+  &__nav {
+    @include adjust;
+    column-gap: 35px;
+    &_item {
+      font-size: 1rem;
+      font-weight: 400;
+      color:#B8BECD;
+      transition: .2s;
+      &:hover {
+        color: #202336;
+      }
+      &--active {
+        color:#202336;
+      }
+    } 
+  }
+  &__buttons {
+    margin-left: 34px;
+    @include adjust;
+    column-gap: 18px;
+    &_login {
+      @include btn;
+      background-color: transparent;
+      color: $primary-color;
+      &:hover {
+        background-color: $primary-color;
+        color:#fff;
+      }
+    }
+    &_register {
+      @include btn;
+    }
+  }
+  @media (max-width:850px) {
+    &__nav {
+      transform: translateY(-120%);
+      background-color: #fff;
+      z-index: 99;
+      transition:.2s;
+      position: absolute;
+      flex-direction: column;
+      justify-content:space-around;
+      column-gap: 0;
+      height: calc(100vh - 9vh - 15px);
+      width: 100vw;
+      margin: 0 auto;
+      text-align: center;
+      top: calc(9vh + 20px);
+      left: 0;
+       &_item {
+        font-size: 2rem;
+       }
+    }
+    .bar {
+      display: block;
+      margin-left: 20px;
+      transition: .3s;
+    }
+    #check-bar:checked ~ .header__nav {
+      transform: translateY(0);
+    }
+    #check-bar:checked ~ .bar {
+      transform: rotate(450deg);
+    }
+  }
+  @media (max-width:500px) {
+    &__buttons {
+      column-gap: 10px;
+    }
+  }
+  @media (max-width:319px) {
+    justify-content: center;
+    &__buttons {
+      margin-left: 0;
+    }
+    &__right {
+      width: 100%;
+    }
+    &__logo {
+      display: none;
+    }
+  }
+}

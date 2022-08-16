@@ -1,0 +1,104 @@
+@use "../globals/colors" as *;
+@use "../globals/mixin" as *;
+.feature {
+  padding-top: 280px;
+  &__top {
+    @include adjust;
+    position: relative;
+    margin-bottom: 50px;
+    .circle {
+      position: absolute;
+      top: -30px;
+      left: 80%;
+    }
+    &_title{
+      font-size: 2rem;
+      margin: 0 0 10px;
+    }
+    &_btn {
+      color:$primary-color;
+      background-color: transparent;
+      border: none;
+      font-size: 1rem;
+      &:hover {
+        cursor: pointer;
+        opacity: .8;
+      }
+    }
+  }
+  &__list {
+    @include adjust;
+    &_item {
+      width: 24%;
+      position: relative;
+      max-width: 260px;
+      max-height: 337px;
+      border-radius: 15px;
+      overflow: hidden;
+      &>img {
+        object-fit:fill;
+      }
+    }
+    &_texts {
+      position:absolute;
+      bottom: 0;
+      left:0;
+      padding: 11px 22px 5px 1px;
+      background-color: #fff;
+      border-top-right-radius: 5px;
+      p {
+        font-size: 1rem;
+        font-weight: 500;
+        margin-bottom: -5px;
+      }
+      span {
+        font-size: .8rem;
+        color: #7D7987;
+      }
+    }
+  }
+  @media (max-width:1024px) {
+    padding-top: 150px; 
+    &__list {
+      flex-wrap: wrap;
+      row-gap: 40px;
+      &_item {
+        width: 50%;
+        
+      }
+    }
+
+  }
+  @media (max-width:600px) {
+    padding-top: 40px; 
+    &__top {
+      &_title {
+        font-size: 1.4rem;
+      }
+      &subtitle {
+        font-size: .6rem;
+      }
+
+    }
+    &__list {
+      flex-wrap: nowrap;
+      flex-direction: column;
+      row-gap: 40px;
+      &_item {
+        width: 95%;
+      }
+    }
+
+  }
+  @media (max-width:350px) {
+    &__top {
+      &_title {
+        font-size: .9rem;
+      }
+      &subtitle {
+        font-size: .4rem;
+      }
+
+    }
+  }
+}
