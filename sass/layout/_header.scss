@@ -1,14 +1,17 @@
 @use "../globals/colors" as *;
 @use "../globals/mixin" as *;
 header {
-  padding-top: 15px;
   padding-right: 5%;
   padding-left: 5%;
+  top: 0;
+  position:sticky;
+  z-index: 999;
 }
 .header {
   @include adjust;
   width: 100%;
-  height: 9vh;
+  background-color: #fff;
+  height: 10vh;
   #check-bar {
     display: none;
   }
@@ -75,11 +78,11 @@ header {
       flex-direction: column;
       justify-content:space-around;
       column-gap: 0;
-      height: calc(100vh - 9vh - 15px);
+      height: calc(100vh - 10vh);
       width: 100vw;
       margin: 0 auto;
       text-align: center;
-      top: calc(9vh + 20px);
+      top:10vh;
       left: 0;
        &_item {
         font-size: 2rem;
